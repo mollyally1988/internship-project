@@ -18,10 +18,10 @@ class SignUpPage(Page):
         self.open_url(self.sign_up_url)
 
     def fill_out_form(self):
-        self.input_text('test+AlinaD+careerist', *self.NAME_INPUT)
+        self.input_text('test+AD+careerist', *self.NAME_INPUT)
         self.input_text('+971 + test + careerist', *self.PHONE_INPUT)
-        self.input_text('AD@gmail.com', *self.EMAIL_INPUT)
-        self.input_text('Password!', *self.PW_INPUT)
+        self.input_text('AlinaD@email.com', *self.EMAIL_INPUT)
+        self.input_text('Password1!', *self.PW_INPUT)
         self.input_text('Test', *self.CO_WEBSITE_INPUT)
         self.select_from_dropdown('Developer', *self.REPRESENT_DROPDOWN)
         self.select_from_dropdown('Seller', *self.POSITION_DROPDOWN)
@@ -30,3 +30,6 @@ class SignUpPage(Page):
 
     def click_create_account_btn(self):
         self.click(*self.CREATE_ACCT_BTN)
+
+
+
