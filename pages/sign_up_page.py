@@ -18,9 +18,9 @@ class SignUpPage(Page):
         self.open_url(self.sign_up_url)
 
     def fill_out_form(self):
-        self.input_text('test+AlinaFsdgfa10+careerist', *self.NAME_INPUT)
+        self.input_text('test+AlinaFsdgfal541+careerist', *self.NAME_INPUT)
         self.input_text('+971 + test + careerist', *self.PHONE_INPUT)
-        self.input_text('AlinaFsdgfa10@email.com', *self.EMAIL_INPUT)
+        self.input_text('AlinaFsdgfal541@email.com', *self.EMAIL_INPUT)
         self.input_text('Password1!', *self.PW_INPUT)
         self.input_text('Test', *self.CO_WEBSITE_INPUT)
         self.select_from_dropdown('Developer', *self.REPRESENT_DROPDOWN)
